@@ -1,13 +1,13 @@
 <?php
 /*
   Plugin Name: Redonleft Player
-  Plugin URI: https://www.redonleft.com
+  Plugin URI: https://github.com/alucardwind/redonleft_player
   Description: only for redonleft.com, display video or audieo player on page
-  Version: 1.0.0
+  Version: 1.1.0
   Author: Redonleft
   Author URI: https://www.redonleft.com
 
-  Copyright 2019  Redonleft  (email : 844614585@qq.com)
+  Copyright 2020  Redonleft  (email : 844614585@qq.com)
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -28,7 +28,8 @@ include 'rp_options.php';
 class redonleft_player{
 	public function rol_player( $player_arr = '' ) {
 		if($player_arr['type'] == "bilibili"){
-			$player_before = "<iframe id='bilibili' src='https://player.bilibili.com/player.html?aid=";
+		    //<iframe src="//player.bilibili.com/player.html?aid=66096337&bvid=BV1r441127ZE&cid=114649797&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+			$player_before = "<iframe id='bilibili' src='https://player.bilibili.com/player.html?bvid=";
 			$player_after = "&cid=&page=1' scrolling='no' border='0' frameborder='no' framespacing='0' allowfullscreen='true'> </iframe>";
 			if($_GET['bili_av']){
 				$player_num = $_GET['bili_av'];

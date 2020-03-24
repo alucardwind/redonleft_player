@@ -34,7 +34,7 @@ function redonleft_player_options(){
 	<table>
 		<tr>
 			<th scope="row">
-				<strong><?php _e("bilibili播放AV号", "Redonleft-Player"); ?> :</strong>
+				<strong><?php _e("bilibili播放BV号", "Redonleft-Player"); ?> :</strong>
 			</th>
 			<td>
 				<input type="text" id="bilibili_num" name="bilibili_num"  value="<?php echo get_option('bilibili_num'); ?>"/>
